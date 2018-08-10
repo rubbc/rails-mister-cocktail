@@ -1,0 +1,35 @@
+.cocktail-item{
+  height: 30vh;
+  background-color: #008F7A;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  box-shadow: 5px 5px 100px rgba(0, 0, 0, 0.3);
+
+  :hover{
+    text-decoration: none;
+  }
+
+  .cocktail-name{
+    color: white;
+    top: 10px;
+    left: 40px;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+  }
+
+
+  // a{
+  //   text-decoration: none;
+  //   color: white;
+  // }
+}
+
+
+.text-deco-none:hover{
+  text-decoration: none;
+  margin: 0;
+}
