@@ -1,18 +1,33 @@
 
-<p>cocktails/<%= @cocktail.name %></p>
 
-<h4>
-  <%= @cocktail.name.capitalize %>
-</h4>
 
-<% @cocktail.doses.each do |dose| %>
-  <p><%= dose.description %></p>
-  <p><%= link_to "delete dose", dose_path(dose),method: :delete, data: { confirm: "are you sure motherfucker ?"} %></p>
-<% end %>
+<p class="path-cocktail">cocktails/<%= @cocktail.name %></p>
 
-<%= link_to "back", cocktails_path %>
 
-<%= link_to "+++", new_cocktail_dose_path(@cocktail) %>
+
+
+<div class="show-container">
+  <div class="new-cocktail-name">
+    <h4>
+      <%= @cocktail.name.capitalize %>
+    </h4>
+  </div>
+
+  <div class="dose-to-cocktail">
+    <% @cocktail.doses.each do |dose| %>
+      <p><%= dose.description %></p>
+      <p><%= link_to "delete dose", dose_path(dose),method: :delete, data: { confirm: "are you sure motherfucker ?"} %></p>
+    <% end %>
+  </div>
+
+  <div class="new-cocktail-buttons">
+
+    <%= link_to "back", cocktails_path, class: 'btn btn-medium' %>
+
+    <%= link_to "+++", new_cocktail_dose_path(@cocktail), class: 'btn btn-medium' %>
+
+  </div>
+</div>
 
 
 

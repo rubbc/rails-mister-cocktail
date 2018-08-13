@@ -1,0 +1,43 @@
+body.cocktails.show{
+  background-color: rgba(255, 111, 145,1);
+}
+
+
+.path-cocktail{
+  margin-top: 5%;
+  color: white;
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
+
+.show-container{
+  display: flex;
+  align-items: center;
+  // justify-content: space-between;
+  // padding: 40px 0;
+  height: 60vh;
+}
+
+
+.new-cocktail-name{
+  margin: 50px;
+  padding: 30px;
+
+
+  h4{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+  }
+
+}
+
+
+.dose-to-cocktail{
+  p{
+    color: white;
+    font-weight: 400;
+  }
+  margin-right: 50px;
+}
